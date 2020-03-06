@@ -11,7 +11,7 @@ $_SESSION["peopleAmount"];
 
 $command = Yii::$app->db->createCommand("SELECT sum(peopleAmount) FROM contactform_submissions");
 $sum = $command->queryScalar();
-echo $sum;
+//echo $sum;
 
 if (isset($_COOKIE['inschrijvingen'])) {
     unset($_COOKIE['inschrijvingen']);
