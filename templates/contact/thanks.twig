@@ -1,0 +1,5 @@
+{% if craft.app.session.hasFlash('notice') %}
+	<p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+{% elseif craft.app.session.hasFlash('error') %}
+	<p class="message error">{{ craft.app.session.getFlash('error') }}</p>
+{% endif %}
